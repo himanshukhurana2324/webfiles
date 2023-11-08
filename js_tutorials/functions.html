@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>using functions</title>
+  </head>
+  <body>
+    <p id="splice"></p>
+    <script>
+      function myfunc(a, b) {
+        return a * b * Math.ceil(Math.random() * 10);
+      }
+
+      document.getElementById("splice").innerHTML = myfunc(12, 12);
+    </script>
+  </body>
+</html>

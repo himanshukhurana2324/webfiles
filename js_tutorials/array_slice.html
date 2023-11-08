@@ -1,0 +1,22 @@
+<html>
+    <head><title>using slice method</title></head>
+<body>
+    <p id="splice"></p>
+    <script>
+    var fruit =["apple","banana","orange"];
+    var a=[1,2,3,4,4,4,54];
+    fruit.splice(1,0,"lemon","tomato");
+    
+    /* here 1 is the index to place the items from
+        0 means to not remove any element
+        rest are the elements to add into it*/
+
+    a.splice(0,3,6,5,7);
+    a.sort(); //sorting the array
+    fruit.sort();
+    document.getElementById("splice").innerHTML=fruit.join("*");
+    document.getElementById("splice").innerHTML=a.join("*");
+
+</script>
+</body>
+</html>
