@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with Forms</title>
+</head>
+
+
+<!-- HERE NOT ONLY WE WILL BE USING THE REQUIRED FIELD 
+    BUT ALSO THE "AUTOCOMPLETE" FEATURE TO REDUCE THE USER DATA ENTERING FOR HIS CONVENIENCE -->
+
+
+
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <legend>General Information :</legend>
+                <label for="first">(Required)Enter the First name</label>
+                <input required type="text" id="info" name="name" autocomplete="name" /><br /><br />
+
+                <label for="last">Enter the Last Name</label>
+                <input required type="text" id="last" /><br /><br />
+
+                <label for="dob">Enter DOB</label>
+                <input required type="date" id="DOB" name="Date" autocomplete="name" /><br /><br />
+                <label for="Gender">Sex</label>
+                <select name="Gender" id="Gender">
+                    <option value="male">male</option>
+                    <option value="Female">Female</option>
+                </select><br /><br />
+                <label for="password">Enter the password</label>
+                <input type="password" id="password" minlength="6" /><br /><br />
+                <label for="email"> Enter the mail id : <input required type="email" id="email"></label>
+                <br><br>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

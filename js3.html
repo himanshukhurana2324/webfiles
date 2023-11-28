@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+
+<!-- HERE WE WILL WILL USING THE DOM OBJECTS TO HANDLE THE EVENT HANDLERS IN THE HTML -->
+
+
+<body>
+    <h3>Working in the DOM</h3>
+    <p id="para">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum
+        possimus inventore eum atque, quae assumenda temporibus veritatis est
+        libero ab blanditiis expedita ipsum optio porro animi a sequi officiis
+        deserunt.
+    </p>
+    <br /><br />
+    <input type="button" id="jsquery" value="Save" />
+    <script>
+        function show() {
+            let day = new Date();
+            let days = ["sunday", "mondays", "thursday"];
+            document.getElementById("para").innerHTML =
+                "today is " + days[day.getDay()];
+        }
+        x = document.getElementById("jsquery");
+        x.onclick = show;
+    </script>
+</body>
+
+</html>
