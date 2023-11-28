@@ -7,8 +7,32 @@
     <title>Document</title>
 </head>
 
+
+<!-- HERE WE ARE USING MULTIPLE EVENTHANDLERS ON THE SAME ELEMENTS  -->
+
 <body>
     <h3>Using the addeventhandler</h3>
+    <p id="para">initial working of the handler</p>
+    <input type="button" id="btn" value="enter">
+    <script>
+        y = document.getElementById("btn");
+
+        // MULTIPLE EVENT HANDERS ARE BVEING USED 
+
+
+        y.addEventListener("click", func2);
+        y.addEventListener("click", func1);
+        function func1() {
+
+            alert("Now the content will be changed");
+        }
+        function func2() {
+            x = document.getElementById("para");
+            x.textContent = "content changed";
+            // document.body.textContent = "working with the Document object";
+        }
+
+    </script>
 
 </body>
 
